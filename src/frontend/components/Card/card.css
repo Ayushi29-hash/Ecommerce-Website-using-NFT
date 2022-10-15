@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:grey;
+    font-family: sans-serif;
+}
+.color {
+    color: black;
+}
+.card {
+    top: 50%;
+    left: 50%;
+    /* margin: 100px; */
+    transform: translate(-50%,-50%);
+    margin-bottom: 30px;
+    width: 350px;
+    height: 380px;
+    background: #000;
+    text-transform: uppercase;
+    text-align: center;
+    color: lightcoral;
+}
+
+.card-title {
+    margin-bottom: -0.5rem;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+.card-img, .card-img-top, .card-img-bottom {
+    height: 50%;
+    width: 100%;
+}
+.card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card .image img {
+    width: 100%;
+    transition: .5s;
+}
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;/*100%*/
+    height: 100%;
+    background: darkcyan;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: brown;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.card .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.card .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.card .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.card .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.card .details .center ul li a:hover {
+    background: black;
+}
+.btn-lg{
+    /* margin-bottom:10px ; */
+    margin-top:10px ;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+}
