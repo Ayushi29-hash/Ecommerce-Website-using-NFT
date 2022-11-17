@@ -1,6 +1,6 @@
 # NFT Marketplace
 
-## Technology Stack & Tools
+## Technology Stack and Tools
 
 - Solidity (Writing Smart Contract)
 - Javascript (React & Testing)
